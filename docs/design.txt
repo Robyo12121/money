@@ -1,0 +1,27 @@
+Tool to make it easier to enter expenses and keep track of money. 
+
+Should be a command line tool. 
+
+Features:
+Change current working month to add transactions 
+Ability to configure settings such as:
+ Start and finish days of month - set the dates that each monthly budget is calculated upon to match dates between 1 salary and the next. 
+ Currency
+ 
+
+Should store transactions in sqlite
+
+Should be able to enter transactions like:
+
+>>> <command> <transaction type> <amount> <catagory> 
+>>> money expense 54.21 groceries biedronka
+>>> money income 10000 salary
+>>> money expense 102 eating out
+
+Should be able to view various text reports in command line with info such as:
+
+
+Future:
+PDF parsing to automate entry of transactions into database without any cli manual input necessary
+
+
