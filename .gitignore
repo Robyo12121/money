@@ -1,3 +1,5 @@
 money/*.egg-info
 
 money/venv/*
+
+*.pyc

@@ -9,6 +9,6 @@ setup(
 	],
 	entry_points='''
 	    [console_scripts]
-	    money=money:cli
+	    money=money:money
 	''',
 )
