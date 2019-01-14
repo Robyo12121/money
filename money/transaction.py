@@ -1,5 +1,6 @@
 import datetime
-import database
+# import database
+
 
 class Transaction:
     """ Transaction type
@@ -7,7 +8,6 @@ class Transaction:
         Category
         Note
         Date
-        
     """
     def __init__(self, date, amount=0, expense=True, category=None, note=None):
         self.expense = expense
@@ -22,7 +22,7 @@ class Transaction:
     def __str__(self):
         return f"{self.__class__.__name__} - date: {self.date}, Expense: {self.expense}, Category: {self.category}, Notes: {self.note}"
 
-    
+
 def temp_next_transaction():
     date = str(input("Date: "))
     amount = float(input("Amount: "))
@@ -36,18 +36,16 @@ def temp_next_transaction():
         expense = False
     else:
         raise TypeError("Incorrect type")
-        
+
     return Transaction(date, amount, expense, category)
+
 
 def parse_date(someDateString):
     pass
-##    return date
+#   return date
+
 
 if __name__ == '__main__':
     today = datetime.datetime.now().date()
     print(today)
     tr1 = Transaction(today, 54.21, expense=True, category='groceries')
-    
-    
-    
-    
