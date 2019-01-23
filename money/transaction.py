@@ -20,7 +20,7 @@ class Transaction:
         return f"{self.__class__.__name__}({self.date}, expense=True, '{self.category}', 'extra notes here')"
 
     def __str__(self):
-        return f"{self.__class__.__name__} - date: {self.date}, Expense: {self.expense}, Category: {self.category}, Notes: {self.note}"
+        return f"{self.__class__.__name__} - date: {self.date}, Expense: {self.expense}, Category: {self.category}, Note: {self.note}"
 
 
 def temp_next_transaction():

@@ -9,7 +9,7 @@ Ability to configure settings such as:
  Currency
  
 
-Should store transactions in sqlite
+Should store transactions in sqlite, maybe
 
 Should be able to enter transactions like:
 

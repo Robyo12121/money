@@ -6,10 +6,10 @@ setup(
 	packages=find_packages(),
 	include_package_data=True,
 	install_requires=[
-	    'Click',
+		'Click',
 	],
-	entry_points='''
-	    [console_scripts]
-	    money=money.money:money
-	''',
+	entry_points="""
+		[console_scripts]
+		money=money.money:money
+	""",
 )
