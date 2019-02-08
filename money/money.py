@@ -10,7 +10,7 @@ def money():
 @money.command()
 @click.argument('date', required=True, type=str)  # , help="Date of expsense")
 @click.argument('amount', required=True, type=float)  # , help="Expense amount")
-@click.option('--category', type=str, help="classify expense type")
+@click.option('-c', '--category', type=str, help="classify expense type")
 @click.option('--note', type=str, help="Attach a note to this expense")
 def expense(date, amount, category, note):
     click.echo(f"DATE: {date} AMOUNT: {str(amount)} CATEGORY: {category} NOTE: {note}")
@@ -21,7 +21,7 @@ def expense(date, amount, category, note):
 @money.command()
 @click.argument('date', required=True, type=str)  # , help="Date of expsense")
 @click.argument('amount', required=True, type=float)  # , help="Expense amount")
-@click.option('--category', type=str, help="classify expense type")
+@click.option('-c', '--category', type=str, help="classify expense type")
 @click.option('--note', type=str, help="Attach a note to this expense")
 def income(date, amount, category, note):
     click.echo(f"DATE: {date} AMOUNT: {str(amount)} CATEGORY: {category} NOTE: {note}")
